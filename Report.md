@@ -25,25 +25,25 @@ Config also includes all hyperparemeters which I found to work best.
 
 Model consists of several components, each built of 2 layers per component (body and head), body normally has 500 and head 400 nodes, details of the model are in the table below. 
 
-|        Layer (type)   |           Output Shape   |      Param #|
+|Layer (type)   |           Output Shape   |      Param #|
 | --- | --- | --- | 
-    |       Inputs            |    [-1, 1000]         |	 25,000
-    |   BatchNorm1d-2         |        [-1, 1000]     |	      2,000
-    |        PolicyBody       |           [-1, 500]   |	      500,500
-    |   BatchNorm1d-4         |         [-1, 500]     |	      1,000
-    |        PolicyHead       |          [-1, 400]    |	     200,400
-    |        Actor            |      [-1, 400]        |	 160,400
-    |        Alpha            |        [-1, 2]        |	     802
-    |        Beta             |       [-1, 2]         |	    800
-    |        Actions          |          [-1, 2]      |	       800
-    |       Critic            |      [-1, 400]        |	 160,400
+|       Inputs            |    [-1, 1000]         |	 25,000
+|   BatchNorm1d-2         |        [-1, 1000]     |	      2,000
+|        PolicyBody       |           [-1, 500]   |	      500,500
+|   BatchNorm1d-4         |         [-1, 500]     |	      1,000
+|        PolicyHead       |          [-1, 400]    |	     200,400
+|        Actor            |      [-1, 400]        |	 160,400
+|        Alpha            |        [-1, 2]        |	     802
+|        Beta             |       [-1, 2]         |	    800
+|        Actions          |          [-1, 2]      |	       800
+|       Critic            |      [-1, 400]        |	 160,400
            
 Total params: 1,052,503  
 Trainable params: 1,052,503  
 Non-trainable params: 0  
 
 ## Training chart: 
-![](/Training.png)
+![](/images/Training.png)
 
 ## Parameters used (please see config.py): 
 ### Agent / network specific
