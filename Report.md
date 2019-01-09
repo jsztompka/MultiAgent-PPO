@@ -48,13 +48,13 @@ Non-trainable params: 0
 ## Parameters used (please see config.py): 
 ### Agent / network specific
 
- gae_tau = 0.95
- gradient_clip = 4.7
- rollout_length = 2000       - trajectory length when recording actions / states
- optimization_epochs = 10    - training length
- mini_batch_size = 500       - batch size in training
- ppo_ratio_clip = 0.123      - PPO clipping value 
- lr = 0.0001                 - initial learning rate decayed over time
+ gae_tau = 0.95  
+ gradient_clip = 4.7  
+ rollout_length = 2000       - trajectory length when recording actions / states  
+ optimization_epochs = 10    - training length  
+ mini_batch_size = 500       - batch size in training  
+ ppo_ratio_clip = 0.123      - PPO clipping value   
+ lr = 0.0001                 - initial learning rate decayed over time  
 
 ## Future improvements: 
 Better algorithm such as Soft Actor Critic could perform better. 
